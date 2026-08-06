@@ -1,0 +1,42 @@
+{
+  "phase": "0",
+  "team": "Team3",
+  "as_of": "2026-08-06",
+  "runtime_mode": "offline_preflight",
+  "commands": [
+    {"command": "python run_capstone.py --check", "exit_code": 1, "result": "verify_fail_crlf_environment"},
+    {"command": "python tools/verify_package.py", "exit_code": 1, "result": "verify_fail_crlf_environment"},
+    {"command": "python tools/test_contracts.py", "exit_code": 0, "result": "pass_all_six_samples"},
+    {"command": "python tools/check_submission_structure.py --scaffold", "exit_code": 0, "result": "pass_scaffold"},
+    {"command": "python starter/baseline_diagnostics.py", "exit_code": 0, "result": "four_clues_only"}
+  ],
+  "package_counts": {
+    "injects": 84,
+    "csv": 143,
+    "knowledge": 32,
+    "templates": 30,
+    "public_scenarios": 15,
+    "files_walked": 370
+  },
+  "baseline_diagnostics_clues": [
+    "stale entitlement cache",
+    "model hash mismatch",
+    "unapproved unit mapping",
+    "untrusted knowledge present"
+  ],
+  "integrity": {
+    "verify_package": "FAIL",
+    "primary_cause": "CRLF_vs_LF_hash_drift_on_Windows",
+    "spot_check_file": "knowledge/AI_GXP_BOUNDARY.md",
+    "lf_normalized_matches_published_hash": true,
+    "decision_id": "D-002",
+    "assumption_id": "A-001"
+  },
+  "artefacts_created": [
+    "submission/artefacts/00_PREFLIGHT_REPORT.md",
+    "submission/artefacts/00_TEAM_CHARTER.md",
+    "submission/artefacts/00_ASSUMPTIONS_DECISION_LOG.md"
+  ],
+  "phase0_exit": "complete_with_recorded_integrity_residual_risk",
+  "next_phase": "1_qualify_problem_and_no_ai_baseline"
+}

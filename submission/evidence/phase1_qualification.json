@@ -1,0 +1,43 @@
+{
+  "phase": "1",
+  "revision": "prompt_aligned_v0.2",
+  "team": "Team3",
+  "as_of": "2026-08-06",
+  "framing_mode": "hypothesis",
+  "prompts_used": [
+    "prompts/PROMPT_LIBRARY.md#1_qualify_the_problem",
+    "prompts/01_discovery.md",
+    "prompts/02_scqa_minto.md",
+    "prompts/03_prd_vision.md",
+    "prompts/09_lean_dmaic.md#deferred_full_workshop_thin_lenses_only"
+  ],
+  "prompt_spine_outputs": [
+    "submission/artefacts/prompt_spine/01_discovery/evidence_register.md",
+    "submission/artefacts/prompt_spine/01_discovery/evidence_acquisition_backlog.md",
+    "submission/artefacts/prompt_spine/01_discovery/early_waste_signals.md",
+    "submission/artefacts/prompt_spine/01_discovery/dmaic_lens.md",
+    "submission/artefacts/prompt_spine/02_scqa/scqa_minto_decision_narrative.md",
+    "submission/artefacts/prompt_spine/02_scqa/dmaic_lens.md",
+    "submission/artefacts/prompt_spine/03_prd/vision.md",
+    "submission/artefacts/prompt_spine/03_prd/prd.md",
+    "submission/artefacts/prompt_spine/03_prd/scope_in_out.md",
+    "submission/artefacts/prompt_spine/03_prd/dmaic_lens.md"
+  ],
+  "capstone_artefacts_revised": [
+    "submission/artefacts/01_BUSINESS_CASE.md",
+    "submission/artefacts/02_DMAIC_WORKBOOK.md",
+    "submission/artefacts/03_STAKEHOLDER_DECISION_RIGHTS.md",
+    "submission/artefacts/04_PRODUCT_SERVICE_BLUEPRINT.md"
+  ],
+  "sufficiency_scores": {
+    "business_context": "Strong",
+    "user_workflow": "Partial",
+    "constraints": "Strong",
+    "evidence": "Partial",
+    "stakeholder_needs": "Partial"
+  },
+  "governing_experiment": "measure_first_hybrid_MDM_rules_plus_narrow_deterministic_assist_genAI_optional_off_by_default",
+  "decisions": ["D-006", "D-007", "D-008"],
+  "phase1_exit": "complete_prompt_aligned_provisional",
+  "next_phase": "2_domain_and_evidence_model"
+}
