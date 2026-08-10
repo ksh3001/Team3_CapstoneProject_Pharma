@@ -1,0 +1,13 @@
+suite_id,phase5_status,phase6_execution,result,evidence,blocks_production_claim
+TEVV-01,inconclusive_data_scarcity,not_executable_missing_baseline,inconclusive,P0 cycle-time/review-hour still Missing,yes
+TEVV-02,partial,pub_smoke+ac_batch_docs,partial_improved,PUB-01/02 schema-valid packs; citation fixtures,yes
+TEVV-03,pass_poc,reconfirmed_phase3+evaluate,pass_poc,test_phase3_prohibited; evaluate ready_blocked=false,yes_if_regress
+TEVV-04,partial,audit_paths_reconfirmed,partial,working/audit on smoke runs,yes
+TEVV-05,partial,poison+pub_structural,partial,phase3/4; PUB-09 structural only,yes
+TEVV-06,partial,smoke_conflicts_flags,partial,batch/pv required_reviews on fixtures,yes
+TEVV-07,partial,pub04_pv_smoke,partial_improved,PUB-04; fuzzy still blocked,yes
+TEVV-08,partial,idempotency+no_agent,partial,evaluate+workflows; PUB-13 structural,yes
+TEVV-09,partial,purpose_authz_only,partial,PUB-11 structural; privacy suite open,yes
+TEVV-10,inconclusive_data_scarcity,subgroup_register_only,inconclusive,subgroup_evidence.csv claim_allowed=no where not_run,yes
+TEVV-11,inconclusive_data_scarcity,token_zero_reconfirmed,inconclusive_cost_unknown,llm_calls=0 on smoke; no load p95,yes
+TEVV-12,partial,outage_kill_switch_retest,partial_improved,ai_disabled 503 narrator; AC-052 still deferred,yes

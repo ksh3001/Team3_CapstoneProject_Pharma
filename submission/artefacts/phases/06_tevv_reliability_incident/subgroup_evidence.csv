@@ -1,0 +1,11 @@
+subgroup_id,dimension,inject_or_source,evidence_available,grader_status,claim_allowed,notes
+SG-LANG-AR,language_arabic,INJ-072; model_performance.csv,signal_only,not_run,no,Flag multilingual_review; no parity claim
+SG-LANG-HI,language_hindi,INJ-072; model_performance.csv,signal_only,not_run,no,Same as Arabic
+SG-LANG-EN,language_english,INJ-072,signal_only,not_run,no,Relative better in package narrative only — unmeasured here
+SG-LANG-DE,language_german,INJ-072,signal_only,not_run,no,Unmeasured
+SG-A11Y-KB,accessibility_keyboard,INJ-073; usability_findings.csv,signal_only,not_run,no,CLI assessed path; UI not production
+SG-A11Y-COLOR,accessibility_color_only,INJ-073,signal_only,not_run,no,Prefer text status codes in CLI/API
+SG-ROLE-QP,role_qualified_person,users_entitlements.csv,fixture,pass_poc,yes_for_poc_allow,qp_eu_1 allow paths
+SG-ROLE-CONTRACTOR,role_revoked_contractor,INJ-067,fixture,pass_poc,yes_for_poc_deny,contractor_77 deny
+SG-SITE-CMO-IE,site_batch,batches.csv NCB204-B24071,fixture,partial,limited,PUB-01 smoke mapped
+SG-PRIVACY-AFFILIATE,privacy_cross_affiliate,INJ-068,signal_only,partial,no_exfil_claim,Purpose AuthZ only; full suite open

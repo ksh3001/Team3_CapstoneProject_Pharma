@@ -1,0 +1,9 @@
+{
+  "decision": "deny",
+  "user": "unknown_user",
+  "purpose": "batch_evidence",
+  "object_type": "batch",
+  "object_id": "matrix-probe",
+  "checked_at": "2026-08-07T06:10:20Z",
+  "reason": "unknown_user"
+}

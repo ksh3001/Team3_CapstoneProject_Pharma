@@ -1,0 +1,12 @@
+{
+  "name": "pv_intake",
+  "request_id": "t-pv-1",
+  "workflow": "pv_intake",
+  "started_ms": 1786083020378.5505,
+  "ended_ms": 1786083020389.562,
+  "side_effect_count": 0,
+  "conflict_count": 1,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

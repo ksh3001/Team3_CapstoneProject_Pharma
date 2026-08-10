@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "t-authz-deny",
+  "workflow": "batch_evidence",
+  "started_ms": 1786083020270.5635,
+  "ended_ms": 1786083020272.557,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "deny",
+  "readiness_state": "",
+  "extra": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "pv_intake",
+  "request_id": "def-d6",
+  "workflow": "pv_intake",
+  "started_ms": 1786083238153.601,
+  "ended_ms": 1786083238164.8608,
+  "side_effect_count": 0,
+  "conflict_count": 1,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "supply_options",
+  "request_id": "assure-1-supply",
+  "workflow": "supply_options",
+  "started_ms": 1786034434618.9636,
+  "ended_ms": 1786034434625.962,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

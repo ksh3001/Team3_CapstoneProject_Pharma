@@ -1,0 +1,43 @@
+{
+  "phase": "7",
+  "revision": "v1.0_2026-08-07",
+  "team": "Team3",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/07_operating_model_transfer/",
+  "framing_mode": "hypothesis",
+  "workshop_alignment": "stage_7_artefacts_26_29",
+  "artefacts": [
+    "26_TARGET_OPERATING_MODEL.md",
+    "27_VENDOR_EXIT_RETIREMENT.md",
+    "28_PRODUCTION_READINESS.md",
+    "29_NINETY_DAY_ROADMAP_HANDOVER.md",
+    "capability_owners.csv",
+    "dependency_inventory.csv",
+    "production_readiness_checklist.csv",
+    "roadmap_90day.csv",
+    "handover_inventory.csv",
+    "PHASE7_CHECKPOINT.md",
+    "README.md"
+  ],
+  "handover_stance": {
+    "demo_package": "transfer_with_residuals_disclosed",
+    "production_authority": "not_transferred"
+  },
+  "gates": {
+    "demo_go": "conditional_go",
+    "production_go": "no_go"
+  },
+  "roadmap": {
+    "days_0_30": "measure_sponsor_freeze_narrative",
+    "llm_enable_in_m1": false,
+    "write_plane_in_90d": false
+  },
+  "tests": {
+    "command": "PYTHONPATH=submission python -m pytest submission/tests -q",
+    "phase7_module": "submission/tests/test_phase7_transfer.py",
+    "result": "51_passed"
+  },
+  "decisions": ["D-026", "D-027"],
+  "phase7_exit": "complete",
+  "next_phase": "8_defence_elevator_pitch"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "def-d1",
+  "workflow": "batch_evidence",
+  "started_ms": 1786083238139.6028,
+  "ended_ms": 1786083238141.603,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "deny",
+  "readiness_state": "",
+  "extra": {}
+}

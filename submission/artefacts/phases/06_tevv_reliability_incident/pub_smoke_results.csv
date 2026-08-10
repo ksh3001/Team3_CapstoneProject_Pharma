@@ -1,0 +1,16 @@
+scenario_id,workflow,run_type,mapped_object,http_or_assert,schema_gate,llm_calls,notes
+PUB-01,batch,workflow_smoke,batch_id=NCB204-B24071,200,pass,0,qp_eu_1 override of fixture user; execution disabled honored
+PUB-02,batch,workflow_smoke,batch_id=NCB204-B24071,200,pass,0,same mapping
+PUB-03,batch,structural_only,—,fixture_ok,n/a,n/a,no batch_id extracted; input bundle only
+PUB-04,pv,workflow_smoke,case_ids=PV-1001,200,pass,0,no final PV fields
+PUB-05,pv,structural_only,—,fixture_ok,n/a,n/a,no case_id extracted
+PUB-06,pv,structural_only,—,fixture_ok,n/a,n/a,no case_id extracted
+PUB-07,supply,workflow_smoke,event_id=SE-001,200,pass,0,no_side_effects true
+PUB-08,supply,structural_only,—,fixture_ok,n/a,n/a,no event_id extracted
+PUB-09,security,structural_only,—,fixture_ok,n/a,n/a,participant-defined non-executing contract
+PUB-10,reliability,structural_only,—,fixture_ok,n/a,n/a,participant-defined; covered by AC-050/051 + tmpl25
+PUB-11,privacy,structural_only,—,fixture_ok,n/a,n/a,participant-defined; Phase4 privacy residual
+PUB-12,integration,structural_only,—,fixture_ok,n/a,n/a,participant-defined; no write plane
+PUB-13,agent,structural_only,—,fixture_ok,n/a,n/a,no agent swarm in POC
+PUB-14,finops,structural_only,—,fixture_ok,n/a,n/a,LLM=0; TCO Unknown
+PUB-15,clinical,structural_only,—,fixture_ok,n/a,n/a,out of assist execution scope

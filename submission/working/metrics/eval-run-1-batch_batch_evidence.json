@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "eval-run-1-batch",
+  "workflow": "batch_evidence",
+  "started_ms": 1786034202494.2234,
+  "ended_ms": 1786034202501.2283,
+  "side_effect_count": 0,
+  "conflict_count": 2,
+  "authz_decision": "allow",
+  "readiness_state": "conflicted_evidence",
+  "extra": {}
+}

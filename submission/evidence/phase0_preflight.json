@@ -33,9 +33,9 @@
     "assumption_id": "A-001"
   },
   "artefacts_created": [
-    "submission/artefacts/00_PREFLIGHT_REPORT.md",
-    "submission/artefacts/00_TEAM_CHARTER.md",
-    "submission/artefacts/00_ASSUMPTIONS_DECISION_LOG.md"
+    "submission/artefacts/phases/00_preflight/00_PREFLIGHT_REPORT.md",
+    "submission/artefacts/phases/00_preflight/00_TEAM_CHARTER.md",
+    "submission/artefacts/phases/00_preflight/00_ASSUMPTIONS_DECISION_LOG.md"
   ],
   "phase0_exit": "complete_with_recorded_integrity_residual_risk",
   "next_phase": "1_qualify_problem_and_no_ai_baseline"

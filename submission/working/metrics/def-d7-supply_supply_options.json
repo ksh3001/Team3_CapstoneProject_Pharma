@@ -1,0 +1,12 @@
+{
+  "name": "supply_options",
+  "request_id": "def-d7-supply",
+  "workflow": "supply_options",
+  "started_ms": 1786082956552.2793,
+  "ended_ms": 1786082956587.2822,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

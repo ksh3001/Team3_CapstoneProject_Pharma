@@ -1,0 +1,12 @@
+{
+  "name": "supply_options",
+  "request_id": "p6-PUB-07",
+  "workflow": "supply_options",
+  "started_ms": 1786083020572.8132,
+  "ended_ms": 1786083020579.804,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

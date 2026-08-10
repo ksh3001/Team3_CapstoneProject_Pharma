@@ -1,0 +1,43 @@
+{
+  "phase": "3",
+  "revision": "v1.0_2026-08-07",
+  "team": "Team3",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/03_architecture_contracts/",
+  "framing_mode": "hypothesis",
+  "artefacts": [
+    "09_REQUIREMENTS_TRACEABILITY.md",
+    "rtm_matrix.csv",
+    "10_C4_ARCHITECTURE.md",
+    "11_ADR_REGISTER.md",
+    "12_INTEGRATION_CONTRACTS.md",
+    "13_GXP_LIFECYCLE_VALIDATION.md",
+    "14_COMPUTER_SOFTWARE_ASSURANCE.md",
+    "15_QUALITY_RISK_MANAGEMENT.md",
+    "TESTS_FIRST_LOG.md",
+    "PHASE3_CHECKPOINT.md",
+    "README.md"
+  ],
+  "contracts": {
+    "participant_pin": "submission/src/contracts/",
+    "version": "1.0.0-poc",
+    "schemas": [
+      "batch_response.schema.json",
+      "pv_response.schema.json",
+      "supply_response.schema.json",
+      "evidence_item.schema.json"
+    ],
+    "package_authority": "evaluation/contracts/"
+  },
+  "tests": {
+    "command": "PYTHONPATH=submission python -m pytest submission/tests -q",
+    "result": "32_passed",
+    "phase3_module": "submission/tests/test_phase3_prohibited.py",
+    "tests_first_note": "phase3_expanded_negative_coverage; impl_already_green_from_prompt11"
+  },
+  "adr_count_indexed": 10,
+  "architecture_review": "conditional",
+  "decisions": ["D-018", "D-019"],
+  "phase3_exit": "complete",
+  "next_phase": "4_security_artefacts"
+}

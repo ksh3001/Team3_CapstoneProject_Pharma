@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "assure-1-batch",
+  "workflow": "batch_evidence",
+  "started_ms": 1786034434607.9624,
+  "ended_ms": 1786034434615.9636,
+  "side_effect_count": 0,
+  "conflict_count": 2,
+  "authz_decision": "allow",
+  "readiness_state": "conflicted_evidence",
+  "extra": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "t-batch-exec",
+  "workflow": "batch_evidence",
+  "started_ms": 1786083020308.5522,
+  "ended_ms": 1786083020317.5552,
+  "side_effect_count": 0,
+  "conflict_count": 2,
+  "authz_decision": "allow",
+  "readiness_state": "conflicted_evidence",
+  "extra": {}
+}

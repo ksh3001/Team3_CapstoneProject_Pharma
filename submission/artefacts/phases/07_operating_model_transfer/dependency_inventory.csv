@@ -1,0 +1,9 @@
+dependency_id,name,category,assessed_in_use,criticality,lock_in,substitution,owner
+DEP-01,challenge_data_knowledge,input_fixtures,yes,high,na_package,cite_only_immutable,Domain
+DEP-02,python_runtime,platform,yes,high,low,pin_3.10_plus,Build
+DEP-03,jsonschema,library,yes,high,medium,vendored_copy_under_change_control,Build
+DEP-04,llm_provider,model_api,no,none_assessed,high_if_enabled,NoOp_port_ADR-002,Architecture
+DEP-05,enterprise_iam,identity,no,future,medium,CSV_pattern_then_OIDC,Security
+DEP-06,mes_wms_safety_write,execution,no,prohibited,high,keep_absent_ADR-003,Architecture
+DEP-07,local_working_store,audit_metrics,yes,medium,low,JSON_export,Ops
+DEP-08,evaluation_contracts,schemas,yes,high,medium,package_authority_plus_pin,Evaluation

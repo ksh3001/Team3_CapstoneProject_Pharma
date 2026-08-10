@@ -1,0 +1,9 @@
+{
+  "decision": "deny",
+  "user": "contractor_77",
+  "purpose": "supply_options",
+  "object_type": "event",
+  "object_id": "matrix-probe",
+  "checked_at": "2026-08-07T06:10:20Z",
+  "reason": "iam_revoked_overrides_cache"
+}

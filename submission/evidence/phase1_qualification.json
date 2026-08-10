@@ -1,34 +1,49 @@
 {
   "phase": "1",
-  "revision": "prompt_aligned_v0.2",
+  "revision": "v0.3_rerun_2026-08-07",
   "team": "Team3",
-  "as_of": "2026-08-06",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/01_qualify/",
   "framing_mode": "hypothesis",
+  "coding_in_phase": false,
   "prompts_used": [
     "prompts/PROMPT_LIBRARY.md#1_qualify_the_problem",
     "prompts/01_discovery.md",
     "prompts/02_scqa_minto.md",
-    "prompts/03_prd_vision.md",
-    "prompts/09_lean_dmaic.md#deferred_full_workshop_thin_lenses_only"
+    "prompts/03_prd_vision.md"
   ],
-  "prompt_spine_outputs": [
-    "submission/artefacts/prompt_spine/01_discovery/evidence_register.md",
-    "submission/artefacts/prompt_spine/01_discovery/evidence_acquisition_backlog.md",
-    "submission/artefacts/prompt_spine/01_discovery/early_waste_signals.md",
-    "submission/artefacts/prompt_spine/01_discovery/dmaic_lens.md",
-    "submission/artefacts/prompt_spine/02_scqa/scqa_minto_decision_narrative.md",
-    "submission/artefacts/prompt_spine/02_scqa/dmaic_lens.md",
-    "submission/artefacts/prompt_spine/03_prd/vision.md",
-    "submission/artefacts/prompt_spine/03_prd/prd.md",
-    "submission/artefacts/prompt_spine/03_prd/scope_in_out.md",
-    "submission/artefacts/prompt_spine/03_prd/dmaic_lens.md"
+  "canonical_prompt_outputs": [
+    "submission/artefacts/prompts/01_discovery/evidence_register.md",
+    "submission/artefacts/prompts/01_discovery/evidence_acquisition_backlog.md",
+    "submission/artefacts/prompts/01_discovery/early_waste_signals.md",
+    "submission/artefacts/prompts/02_scqa/scqa_minto_decision_narrative.md",
+    "submission/artefacts/prompts/03_prd/vision.md",
+    "submission/artefacts/prompts/03_prd/prd.md",
+    "submission/artefacts/prompts/03_prd/scope_in_out.md"
   ],
-  "capstone_artefacts_revised": [
-    "submission/artefacts/01_BUSINESS_CASE.md",
-    "submission/artefacts/02_DMAIC_WORKBOOK.md",
-    "submission/artefacts/03_STAKEHOLDER_DECISION_RIGHTS.md",
-    "submission/artefacts/04_PRODUCT_SERVICE_BLUEPRINT.md"
+  "capstone_artefacts": [
+    "submission/artefacts/phases/01_qualify/01_BUSINESS_CASE.md",
+    "submission/artefacts/phases/01_qualify/02_DMAIC_WORKBOOK.md",
+    "submission/artefacts/phases/01_qualify/03_STAKEHOLDER_DECISION_RIGHTS.md",
+    "submission/artefacts/phases/01_qualify/04_PRODUCT_SERVICE_BLUEPRINT.md",
+    "submission/artefacts/phases/01_qualify/PHASE1_CHECKPOINT.md"
   ],
+  "evidence_csvs": [
+    "data/board_requests.csv",
+    "data/kpi_conflicts.csv",
+    "data/no_ai_baselines.csv",
+    "data/ai_use_boundaries.csv",
+    "data/decision_rights.csv",
+    "data/stakeholders.csv",
+    "data/cost_model.csv",
+    "data/staff_rates.csv",
+    "data/continuity_requirements.csv"
+  ],
+  "no_ai_baselines": {
+    "master_data_repair": {"estimated_value_pct": 38, "duration_weeks": 10},
+    "rules_workflow": {"estimated_value_pct": 27, "duration_weeks": 6},
+    "genai_assist": {"estimated_value_pct": 51, "duration_weeks": 14}
+  },
   "sufficiency_scores": {
     "business_context": "Strong",
     "user_workflow": "Partial",
@@ -37,7 +52,8 @@
     "stakeholder_needs": "Partial"
   },
   "governing_experiment": "measure_first_hybrid_MDM_rules_plus_narrow_deterministic_assist_genAI_optional_off_by_default",
-  "decisions": ["D-006", "D-007", "D-008"],
-  "phase1_exit": "complete_prompt_aligned_provisional",
+  "decisions": ["D-006", "D-007", "D-015"],
+  "phase1_exit": "complete",
+  "checkpoint": "submission/artefacts/phases/01_qualify/PHASE1_CHECKPOINT.md",
   "next_phase": "2_domain_and_evidence_model"
 }

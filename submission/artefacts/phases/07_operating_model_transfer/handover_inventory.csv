@@ -1,0 +1,16 @@
+bundle_id,bundle,path,status,notes
+H-01,phase_artefacts_0_7,submission/artefacts/phases/,ready,includes checkpoints
+H-02,prompt_spine_01_13,submission/artefacts/prompts/,ready,canonical prompt outputs
+H-03,runtime_code,submission/src/,ready,deterministic POC
+H-04,tests,submission/tests/,ready,phase3-7 suites included
+H-05,contracts_pin,submission/src/contracts/,ready,1.0.0-poc
+H-06,evidence_json,submission/evidence/,ready,phase0-7 JSON
+H-07,decision_log,submission/artefacts/phases/00_preflight/00_ASSUMPTIONS_DECISION_LOG.md,ready,D-001+
+H-08,residual_risks,submission/artefacts/prompts/12_assurance/residual_risk_register.md,ready,RR-01+
+H-09,assurance_case,submission/artefacts/phases/05_assurance_evaluation_ops/21_ASSURANCE_CASE.md,ready,C0/C0prime
+H-10,ir_playbook,submission/artefacts/phases/06_tevv_reliability_incident/incident_playbook.csv,ready,Phase6
+H-11,tom_owners,submission/artefacts/phases/07_operating_model_transfer/capability_owners.csv,ready,Phase7
+H-12,prod_checklist,submission/artefacts/phases/07_operating_model_transfer/production_readiness_checklist.csv,ready,no_go
+H-13,roadmap,submission/artefacts/phases/07_operating_model_transfer/roadmap_90day.csv,ready,Measure-first
+H-14,specs_mirrors,submission/specs/,ready,may lag artefacts
+H-15,challenge_tree,data/;knowledge/;evaluation/,read_only,immutable evidence

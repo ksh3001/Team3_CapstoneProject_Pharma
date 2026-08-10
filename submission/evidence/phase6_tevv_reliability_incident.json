@@ -1,0 +1,48 @@
+{
+  "phase": "6",
+  "revision": "v1.0_2026-08-07",
+  "team": "Team3",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/06_tevv_reliability_incident/",
+  "framing_mode": "hypothesis",
+  "workshop_alignment": "stage_6_artefacts_22_25_remainder_plus_tevv_execution",
+  "artefacts": [
+    "25_INCIDENT_RECOVERY.md",
+    "TEVV_EXECUTION_DEEPEN.md",
+    "incident_playbook.csv",
+    "tevv_execution_results.csv",
+    "pub_smoke_results.csv",
+    "subgroup_evidence.csv",
+    "PHASE6_CHECKPOINT.md",
+    "README.md"
+  ],
+  "pub_fixtures": {
+    "structural_all": 15,
+    "workflow_smoke": ["PUB-01", "PUB-02", "PUB-04", "PUB-07"],
+    "note": "fixture authorized_context user overridden to qp_eu_1 for IAM entitlements"
+  },
+  "tevv": {
+    "full_twelve_pass_claimed": false,
+    "execution_results": "submission/artefacts/phases/06_tevv_reliability_incident/tevv_execution_results.csv",
+    "rr_09_status": "still_open"
+  },
+  "incident_recovery": {
+    "template": "25_INCIDENT_RECOVERY.md",
+    "playbook_rows": 10,
+    "ac_052_drill": "deferred"
+  },
+  "gates": {
+    "demo_go": "conditional_go",
+    "production_go": "no_go",
+    "evaluate_ready_blocked": false
+  },
+  "tests": {
+    "command": "PYTHONPATH=submission python -m pytest submission/tests -q",
+    "phase6_module": "submission/tests/test_phase6_tevv_pub.py",
+    "result": "45_passed"
+  },
+  "deferred_to_phase7": ["26_TARGET_OPERATING_MODEL", "27_VENDOR_EXIT", "28_PRODUCTION_READINESS", "29_ROADMAP_HANDOVER"],
+  "decisions": ["D-024", "D-025"],
+  "phase6_exit": "complete",
+  "next_phase": "7_operating_model_transfer"
+}

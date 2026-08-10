@@ -1,0 +1,11 @@
+dimension,verdict,notes,evidence
+design_fidelity,partial,C4/ADR/contracts match POC; no HTTP/UI hardening,Prompt12 evaluation_report §1
+data_authority,partial,Catalog filter + dual-cite; clock dict P1 open,evaluation_report §2; Phase2 conflict policy
+ai_decision_quality,pass_deterministic,LLM off; FP/FN documented; fuzzy blocked,AC-050/051; fp_fn_examples
+operability,partial,CLI E2E; observability local; load inconclusive,evaluation_report §4; tmpl24
+control_risk,pass_documented_prod_fail,Controls on paper; not live NTG ops,control_plan; residual_risk_register
+hard_gates,pass,AuthZ/docs/batch/pv/supply/evaluate green,pytest 34; evaluate/run
+ac_052_continuity,deferred,Drill not executed,RR-02
+business_outcome_roi,inconclusive_data_scarcity,No P0 baselines,RR-01
+demo_go,conditional_go,Fail-closed demo OK with residuals disclosed,D-012
+production_go,no_go,RR-01/02/05/09 unmitigated,D-012; D-021

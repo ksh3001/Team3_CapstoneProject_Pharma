@@ -1,0 +1,9 @@
+{
+  "decision": "deny",
+  "user": "qp_eu_1",
+  "purpose": "disposition_write",
+  "object_type": "batch",
+  "object_id": "matrix-probe",
+  "checked_at": "2026-08-07T06:10:20Z",
+  "reason": "invalid_purpose"
+}

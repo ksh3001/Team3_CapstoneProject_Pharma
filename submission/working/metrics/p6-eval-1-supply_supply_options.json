@@ -1,0 +1,12 @@
+{
+  "name": "supply_options",
+  "request_id": "p6-eval-1-supply",
+  "workflow": "supply_options",
+  "started_ms": 1786082520423.0989,
+  "ended_ms": 1786082520433.0996,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

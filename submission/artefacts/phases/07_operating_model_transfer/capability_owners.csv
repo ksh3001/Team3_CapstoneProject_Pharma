@@ -1,0 +1,9 @@
+capability_id,capability,owner,aegis_authority,external_decision,status
+CAP-AUTHZ,Purpose-bound AuthZ,Security_CISO,check_audit,IAM_admin_grant_revoke,poc
+CAP-DOC,Document applicability,Document_control,quarantine_include,Quality_Security_elevate,poc
+CAP-BATCH,Batch evidence assist,Quality_QP_support,evidence_pack,EU_QP_certification,poc_demo
+CAP-PV,PV intake assist,PV_Global_Safety,intake_packet,Safety_Physician_finals,poc_demo
+CAP-SUPPLY,Supply options draft,Supply_Governance_Board,draft_options_no_side_effects,Board_allocation,poc_demo
+CAP-EVAL,Evaluate hard gates,Evaluation_Quality_Systems,ready_blocked,Sponsor_demo_go,poc
+CAP-CONT,Continuity AI-disabled,Ops_Architecture,mode_kill_switch,Ops_drill_owner,unit_only
+CAP-CLAIMS,Product framing claims,Product_CQO,hypothesis_label,Sponsor_S1_S7,hypothesis

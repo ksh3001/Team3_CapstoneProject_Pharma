@@ -1,0 +1,17 @@
+window_days,action_id,action,owner,exit_criterion,priority,blocked_by
+0-30,A-01,Record sponsor decisions S1-S7,Product,written_yes_no,P0,—
+0-30,A-02,Approve P0 cycle-time sample plan,Ops_Quality,plan_approved,P0,data_access
+0-30,A-03,Freeze hypothesis demo narrative,Product_CQO,no_roi_overclaim,P0,—
+0-30,A-04,Keep pytest evaluate green,Build,suite_green,P0,—
+0-30,A-05,Socialize IR playbook,Ops_Security,read_confirm,P1,—
+0-30,A-06,Prepare Phase8 failure demos,Whole_team,demo_list,P1,—
+31-60,A-07,Deliver cycle-time review-hour samples,Ops_FinOps,measured_or_assumed,P0,A-02
+31-60,A-08,Execute AC-052 continuity drill,Ops,drill_report,P1,sme_time
+31-60,A-09,Expand AuthZ role matrix,Security,matrix_plus_tests,P1,—
+31-60,A-10,Privacy leakage suite slice,Privacy_Eval,results_or_residual,P2,—
+31-60,A-11,HITL queue metrics stub,Evaluation,depth_age_fields,P1,—
+61-90,A-12,Security GxP hardened-pattern review,CISO_GxP,review_minutes,P1,A-09
+61-90,A-13,Agree TEVV bar with Evaluation,Evaluation,written_suite_list,P1,A-10
+61-90,A-14,ADR-002 revisit only if Measure pass,Architecture,default_remain_off,P2,A-07
+61-90,A-15,Production go reassessment,Sponsors,expect_no_go_unless_tmpl28,P0,RR_clear
+61-90,A-16,Refresh clean-room handover pack,Build_Docs,inventory_signed,P1,—

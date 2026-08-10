@@ -1,0 +1,370 @@
+{
+  "request_id": "t-cont-1",
+  "workflow": "batch_evidence",
+  "as_of": "2026-08-06T00:00:00Z",
+  "authorization": {
+    "user": "qp_eu_1",
+    "purpose": "batch_evidence",
+    "checked_at": "2026-08-07T06:10:20Z",
+    "decision": "allow",
+    "reason": "iam_active_entitled"
+  },
+  "evidence": [
+    {
+      "source": "lab_results.csv",
+      "record_id": "LR-88",
+      "authority": "LIMS",
+      "effective_at": "OOS_LIMS",
+      "retrieved_at": "2026-08-07T06:10:20Z",
+      "facts": {
+        "result_id": "LR-88",
+        "batch_id": "NCB204-B24071",
+        "test": "potency",
+        "value": "0.92",
+        "unit": "mg/L",
+        "spec": "0.85-1.05 ug/mL",
+        "status": "OOS_LIMS"
+      },
+      "integrity": {
+        "sha256": "26ac958a7f5d07f2a1f74aa4e89fbe1bebf35e9a053e23ecbc8929d783dfa1a0",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "lab_results.csv",
+      "record_id": "LR-89",
+      "authority": "LIMS",
+      "effective_at": "pass",
+      "retrieved_at": "2026-08-07T06:10:20Z",
+      "facts": {
+        "result_id": "LR-89",
+        "batch_id": "NCB204-B24071",
+        "test": "purity",
+        "value": "98.7",
+        "unit": "%",
+        "spec": ">=98.0%",
+        "status": "pass"
+      },
+      "integrity": {
+        "sha256": "4266925215e1dcd604708a5dafc6565d8fe91f61b8221ef1f92e046a32c5ffd4",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "type": "unit_conflict",
+      "result_id": "LR-88",
+      "result_unit": "mg/L",
+      "spec": "0.85-1.05 ug/mL",
+      "resolution": "none_dual_cite",
+      "silent_conversion": false
+    },
+    {
+      "type": "unapproved_interface_mapping",
+      "mapping": {
+        "interface": "CRO_LAB_TO_LIMS",
+        "source_unit": "mg/L",
+        "target_unit": "ug/mL",
+        "conversion_rule": "1:1_assumed",
+        "approved": "no"
+      },
+      "resolution": "none_dual_cite"
+    }
+  ],
+  "gaps": [],
+  "abstentions": [],
+  "human_review": {
+    "required": true,
+    "reasons": [
+      "unit_conflict",
+      "unapproved_interface_mapping"
+    ],
+    "hitl": "mandatory_on_conflict_or_gap"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "mode": "deterministic_offline",
+    "llm_enabled": false,
+    "quarantined_docs": [
+      "K-007",
+      "K-999",
+      "K-998",
+      "K-026"
+    ]
+  },
+  "batch_id": "NCB204-B24071",
+  "readiness_state": "conflicted_evidence",
+  "applicable_documents": [
+    {
+      "doc_id": "K-001",
+      "file": "AGENT_BUDGET_AND_STOP_POLICY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-002",
+      "file": "AI_DISABLED_CONTINUITY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-003",
+      "file": "AI_GXP_BOUNDARY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-004",
+      "file": "AI_INCIDENT_RESPONSE.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-005",
+      "file": "AI_MODEL_CHANGE_CONTROL.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-006",
+      "file": "BATCH_RELEASE_EVIDENCE_POLICY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-008",
+      "file": "CLINICAL_PROTOCOL_AUTHORITY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-009",
+      "file": "COLD_CHAIN_ASSESSMENT.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-010",
+      "file": "COMPUTERISED_SYSTEM_LIFECYCLE.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-011",
+      "file": "ECONSENT_AND_SECONDARY_USE.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-013",
+      "file": "GENOMIC_DATA_STANDARD.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-014",
+      "file": "GXP_DATA_INTEGRITY_STANDARD.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-015",
+      "file": "IDMP_MASTER_DATA_GOVERNANCE.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-018",
+      "file": "OOS_OOT_INVESTIGATION.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-019",
+      "file": "PHARMACOVIGILANCE_CASE_POLICY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-020",
+      "file": "PRIVACY_AND_PSEUDONYMISATION.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-021",
+      "file": "PV_DUPLICATE_MANAGEMENT.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-022",
+      "file": "PV_LISTEDNESS_AUTHORITY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-023",
+      "file": "PV_MULTILINGUAL_REVIEW.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-024",
+      "file": "PV_REPORTING_CLOCKS.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-025",
+      "file": "REGULATORY_SUBMISSION_INTEGRITY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-027",
+      "file": "SERIALISATION_AND_RETURNS.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-028",
+      "file": "STERILE_MANUFACTURING_ESCALATION.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-029",
+      "file": "SUPPLY_ALLOCATION_ETHICS.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-030",
+      "file": "TRIAL_DATA_INTEGRITY.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-031",
+      "file": "VENDOR_EXIT_AND_RETIREMENT.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    },
+    {
+      "doc_id": "K-032",
+      "file": "ZERO_TRUST_AI_TOOLS.md",
+      "status": "approved",
+      "trust": "approved",
+      "authority": "NovaCura Global Policy",
+      "jurisdiction": "Global",
+      "instruction_applicable": true,
+      "quarantined": false
+    }
+  ]
+}

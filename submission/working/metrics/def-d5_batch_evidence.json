@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "def-d5",
+  "workflow": "batch_evidence",
+  "started_ms": 1786083238143.6025,
+  "ended_ms": 1786083238152.6091,
+  "side_effect_count": 0,
+  "conflict_count": 2,
+  "authz_decision": "allow",
+  "readiness_state": "conflicted_evidence",
+  "extra": {}
+}

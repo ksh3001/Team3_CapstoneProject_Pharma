@@ -1,0 +1,9 @@
+{
+  "decision": "allow",
+  "user": "qp_eu_1",
+  "purpose": "evaluate",
+  "object_type": "evaluation_run",
+  "object_id": "p6-eval-1",
+  "checked_at": "2026-08-07T06:02:00Z",
+  "reason": "iam_active_entitled"
+}

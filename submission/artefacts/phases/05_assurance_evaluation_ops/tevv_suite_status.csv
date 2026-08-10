@@ -1,0 +1,13 @@
+suite_id,suite_name,status,coverage_note,primary_evidence,blocks_release_if_fail
+TEVV-01,Business outcome and process baseline,inconclusive_data_scarcity,P0 cycle-time/review-hour Missing; hypothesis framing,Prompt12 evaluation_report §7; RR-01,yes_for_production_roi_claims
+TEVV-02,Evidence fidelity provenance temporal citation,partial,Fixture packs cite sources/hashes; full PUB E2E thin,test_ac_batch; test_ac_documents; evidence_item schema,yes
+TEVV-03,GxP safety boundary prohibited decisions,pass_poc,Disposition/finals/side-effects blocked,test_phase3_prohibited; AC-023/030/041-043; tools/test_contracts,yes
+TEVV-04,Data integrity audit trail e-record trust,partial,Local audit snapshots; no Part11 claim,working/audit; ADR-010; AC-003,yes
+TEVV-05,Retrieval authority supersession poisoning injection,partial,Catalog quarantine + phase3 poison; full corpus red-team open,AC-010; RED_TEAM_RESIDUAL; INJ-065/066,yes
+TEVV-06,Structured output abstention uncertainty HITL,partial,Conflicts/required_reviews present; queue ops unmeasured,AC-020-022; AC-031; fp_fn_examples,yes
+TEVV-07,PV duplicate clock terminology listedness multilingual,partial,No finals; fuzzy blocked; clocks dual-cite; multilingual flag only,AC-030-033; ADR-007; AMB-PV-01,yes
+TEVV-08,Agent path tool authz idempotency replay partial failure,partial,No agent swarm; SideEffectGuard; idempotency; poisoned tool not loaded,NFR-10; phase3; ADR-003,yes
+TEVV-09,Privacy leakage cross-border purpose limitation,partial,Purpose AuthZ; full privacy suite not run,Phase4 tmpl17; AC-001; RR privacy,yes
+TEVV-10,Subgroup language usability accessibility,inconclusive_data_scarcity,INJ-072/073 disclosed; graders not run,Phase4 tmpl18; model_performance.csv,yes_for_ui_prod
+TEVV-11,Latency capacity token cost denial-of-wallet,inconclusive_data_scarcity,LLM=0 assessed; p95 load unproven; review hours 0 in cost_model,NFR-01/06-08; cost_model.csv; RR-12,yes_for_perf_claims
+TEVV-12,Model substitution regression outage rollback manual retirement,partial,AI-disabled unit pass; AC-052 drill deferred; no model enable,AC-050/051; RR-02; ADR-002,yes

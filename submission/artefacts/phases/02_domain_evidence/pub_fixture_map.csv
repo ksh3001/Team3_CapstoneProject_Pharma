@@ -1,0 +1,16 @@
+scenario_id,workflow,fixture_path,response_contract,aegis_workflow,related_inject_themes,phase2_notes
+PUB-01,batch,evaluation/public_fixtures/PUB-01.json,evaluation/contracts/batch_response.schema.json,batch_evidence,INJ unit/genealogy/authz/knowledge trust (e.g. D03/D05/D10); LR-88; contractor_77,Map for Phase 6 TEVV; no expected answers in package
+PUB-02,batch,evaluation/public_fixtures/PUB-02.json,evaluation/contracts/batch_response.schema.json,batch_evidence,INJ unit/genealogy/authz/knowledge trust (e.g. D03/D05/D10); LR-88; contractor_77,Map for Phase 6 TEVV; no expected answers in package
+PUB-03,batch,evaluation/public_fixtures/PUB-03.json,evaluation/contracts/batch_response.schema.json,batch_evidence,INJ unit/genealogy/authz/knowledge trust (e.g. D03/D05/D10); LR-88; contractor_77,Map for Phase 6 TEVV; no expected answers in package
+PUB-04,pv,evaluation/public_fixtures/PUB-04.json,evaluation/contracts/pv_response.schema.json,pv_intake,INJ clocks/duplicates/multilingual (e.g. INJ-037/038/072); K-999,Map for Phase 6 TEVV; no expected answers in package
+PUB-05,pv,evaluation/public_fixtures/PUB-05.json,evaluation/contracts/pv_response.schema.json,pv_intake,INJ clocks/duplicates/multilingual (e.g. INJ-037/038/072); K-999,Map for Phase 6 TEVV; no expected answers in package
+PUB-06,pv,evaluation/public_fixtures/PUB-06.json,evaluation/contracts/pv_response.schema.json,pv_intake,INJ clocks/duplicates/multilingual (e.g. INJ-037/038/072); K-999,Map for Phase 6 TEVV; no expected answers in package
+PUB-07,supply,evaluation/public_fixtures/PUB-07.json,evaluation/contracts/supply_response.schema.json,supply_options,INJ quarantine/reservation/shortage ethics; inventory quality_status,Map for Phase 6 TEVV; no expected answers in package
+PUB-08,supply,evaluation/public_fixtures/PUB-08.json,evaluation/contracts/supply_response.schema.json,supply_options,INJ quarantine/reservation/shortage ethics; inventory quality_status,Map for Phase 6 TEVV; no expected answers in package
+PUB-09,security,evaluation/public_fixtures/PUB-09.json,participant-defined non-executing contract,security,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package
+PUB-10,reliability,evaluation/public_fixtures/PUB-10.json,participant-defined non-executing contract,reliability,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package
+PUB-11,privacy,evaluation/public_fixtures/PUB-11.json,participant-defined non-executing contract,privacy,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package
+PUB-12,integration,evaluation/public_fixtures/PUB-12.json,participant-defined non-executing contract,integration,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package
+PUB-13,agent,evaluation/public_fixtures/PUB-13.json,participant-defined non-executing contract,agent,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package
+PUB-14,finops,evaluation/public_fixtures/PUB-14.json,participant-defined non-executing contract,finops,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package
+PUB-15,clinical,evaluation/public_fixtures/PUB-15.json,participant-defined non-executing contract,clinical,see inject register by dimension,Map for Phase 6 TEVV; no expected answers in package

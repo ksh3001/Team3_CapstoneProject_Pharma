@@ -1,0 +1,12 @@
+{
+  "name": "batch_evidence",
+  "request_id": "p6-PUB-01",
+  "workflow": "batch_evidence",
+  "started_ms": 1786083020532.8079,
+  "ended_ms": 1786083020541.8042,
+  "side_effect_count": 0,
+  "conflict_count": 2,
+  "authz_decision": "allow",
+  "readiness_state": "conflicted_evidence",
+  "extra": {}
+}

@@ -1,0 +1,11 @@
+incident_id,class,trigger_inject,detect,contain,preserve,resume_gate,owner
+IR-001,I-AUTHZ,INJ-067,authz audit allow on revoked,deny + revoke cache trust,authz_*.json,AC-001 matrix green,Security
+IR-002,I-POISON,INJ-065,untrusted doc instructional,quarantine corpus,doc applicability audit,AC-010 green,Security+Quality
+IR-003,I-POISON,INJ-066,poisoned tool loaded,disconnect tool plane,tool load log,phase3 poison test,Security
+IR-004,I-AGENCY,INJ-066/disposition,schema accept disposition,422 path + no write adapters,workflow audit,AC-023 green,GxP+Arch
+IR-005,I-AGENCY,reservation,side_effect_count>0,SideEffectGuard kill,metrics JSON,AC-043 green,Supply+Security
+IR-006,I-MODEL,INJ-070,llm_enabled true assessed,ai_disabled mode,mode+call_count,AC-051 + registry hash,Architecture
+IR-007,I-EXFIL,INJ-068,bulk narrative export,purpose AuthZ deny,security_events cite,purpose matrix,Privacy+Security
+IR-008,I-AVAIL,INJ-069,OT/MES unreachable,continue rules-only offline,metrics+audit,AC-050; no MES dependency,Ops
+IR-009,I-AVAIL,INJ-080,stale checkpoint resume,discard drafts; block reservation,agent_runs cite,side_effect=0,Ops+Supply
+IR-010,I-DATA,challenge mutate,hash/watch fail,stop eval; restore from clean package,FILE_HASHES,NFR-12,Build+Eval

@@ -1,0 +1,12 @@
+{
+  "name": "t",
+  "request_id": "req-m1",
+  "workflow": "batch_evidence",
+  "started_ms": 1786083020453.9915,
+  "ended_ms": 1786083020453.9915,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "",
+  "readiness_state": "",
+  "extra": {}
+}

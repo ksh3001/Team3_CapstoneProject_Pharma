@@ -1,0 +1,9 @@
+{
+  "decision": "deny",
+  "user": "contractor_77",
+  "purpose": "batch_evidence",
+  "object_type": "batch",
+  "object_id": "NCB204-B24071",
+  "checked_at": "2026-08-07T06:13:58Z",
+  "reason": "iam_revoked_overrides_cache"
+}

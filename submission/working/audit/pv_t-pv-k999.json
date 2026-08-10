@@ -1,0 +1,260 @@
+{
+  "request_id": "t-pv-k999",
+  "workflow": "pv_intake",
+  "as_of": "2026-08-06T00:00:00Z",
+  "authorization": {
+    "user": "qp_eu_1",
+    "purpose": "pv_intake",
+    "checked_at": "2026-08-07T06:10:20Z",
+    "decision": "allow",
+    "reason": "iam_active_entitled"
+  },
+  "evidence": [
+    {
+      "source": "icsr_cases.csv",
+      "record_id": "PV-1001",
+      "authority": "Safety DB",
+      "effective_at": "2026-07-20",
+      "retrieved_at": "2026-08-07T06:10:20Z",
+      "facts": {
+        "case_id": "PV-1001",
+        "source": "patient_program",
+        "product": "NCB-204",
+        "event": "anaphylaxis",
+        "country": "DE",
+        "awareness_date": "2026-07-20",
+        "language": "German",
+        "patient_key": "P-7X"
+      },
+      "integrity": {
+        "sha256": "494334f3373faed1c2b7aa5b4426c054f221db965c2eb13a0a5e0dd12d9b2f75",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "type": "clock_disagreement",
+      "case_id": "PV-1001",
+      "values": [
+        "2026-07-19T20:01:00Z",
+        "2026-07-20",
+        "2026-07-20T08:11:00Z",
+        "2026-07-21T12:03:00Z"
+      ]
+    }
+  ],
+  "gaps": [],
+  "abstentions": [],
+  "human_review": {
+    "required": true,
+    "required_reviews": [
+      "clock_resolution",
+      "multilingual_review"
+    ]
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "mode": "deterministic_offline",
+    "llm_enabled": false,
+    "fuzzy_enabled": false
+  },
+  "case_ids": [
+    "PV-1001"
+  ],
+  "source_facts": [
+    {
+      "case_id": "PV-1001",
+      "facts": {
+        "case_id": "PV-1001",
+        "source": "patient_program",
+        "product": "NCB-204",
+        "event": "anaphylaxis",
+        "country": "DE",
+        "awareness_date": "2026-07-20",
+        "language": "German",
+        "patient_key": "P-7X"
+      }
+    }
+  ],
+  "duplicate_candidates": [],
+  "clock_evidence": [
+    {
+      "case_id": "PV-1001",
+      "clock": "receipt_at",
+      "source": "vendor",
+      "value": "2026-07-19T20:01:00Z"
+    },
+    {
+      "case_id": "PV-1001",
+      "clock": "receipt_at",
+      "source": "affiliate_inbox",
+      "value": "2026-07-20T08:11:00Z"
+    },
+    {
+      "case_id": "PV-1001",
+      "clock": "receipt_at",
+      "source": "global_db",
+      "value": "2026-07-21T12:03:00Z"
+    },
+    {
+      "case_id": "PV-1001",
+      "clock": "awareness_date",
+      "source": "icsr_cases.csv",
+      "value": "2026-07-20"
+    }
+  ],
+  "terminology": [
+    {
+      "case_id": "PV-1001",
+      "event_verbatim": "anaphylaxis"
+    }
+  ],
+  "listedness_context": [
+    {
+      "doc_id": "K-001",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-002",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-003",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-004",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-005",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-006",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-008",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-009",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-010",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-011",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-999",
+      "instruction_applicable": false,
+      "reportability_authority": false,
+      "quarantined": true
+    },
+    {
+      "doc_id": "K-013",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-014",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-015",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-018",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-019",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-020",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-021",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-022",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-023",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-024",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-025",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-027",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-028",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-029",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-030",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-031",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    },
+    {
+      "doc_id": "K-032",
+      "instruction_applicable": true,
+      "reportability_authority": false
+    }
+  ],
+  "required_reviews": [
+    "clock_resolution",
+    "multilingual_review"
+  ]
+}

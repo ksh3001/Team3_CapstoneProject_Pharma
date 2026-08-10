@@ -1,0 +1,14 @@
+item_id,item,demo_status,production_status,blocker_link,owner
+PR-01,three_workflows_fail_closed,ready,pattern_only,—,Build
+PR-02,hard_gate_tests_green,ready,required_plus_integrations,—,Evaluation
+PR-03,authz_iam_over_cache,ready_csv,needs_real_iam,RR-03,Security
+PR-04,ai_disabled_unit_path,ready,needs_ac052_drill,RR-02,Ops
+PR-05,full_tevv_twelve_suites,partial,not_ready,RR-09,Evaluation
+PR-06,validated_gxp_dss_claim,out_of_scope,not_ready_denied,RR-05,GxP
+PR-07,observability_oncall,local_only,not_ready,—,Ops
+PR-08,p0_baselines_honest_tco,missing,not_ready,RR-01,Product
+PR-09,privacy_dpia_cross_border,partial,not_ready,R-PR-02,Privacy
+PR-10,eu_ai_act_classification,abstain,needs_legal,Q-EU-01,Governance
+PR-11,write_execution_plane,absent_correct,must_remain_absent_or_reopen,ADR-003,Architecture
+PR-12,production_go_decision,n/a,no_go,D-012,Sponsors
+PR-13,demo_go_decision,conditional_go,n/a,D-012,Sponsors

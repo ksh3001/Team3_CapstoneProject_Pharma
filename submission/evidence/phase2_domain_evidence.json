@@ -1,0 +1,32 @@
+{
+  "phase": "2",
+  "revision": "v1.0_2026-08-07",
+  "team": "Team3",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/02_domain_evidence/",
+  "framing_mode": "hypothesis",
+  "inject_register": {
+    "path": "submission/artefacts/phases/02_domain_evidence/inject_evidence_register.csv",
+    "count": 84,
+    "id_range": ["INJ-001", "INJ-084"]
+  },
+  "pub_fixture_map": {
+    "path": "submission/artefacts/phases/02_domain_evidence/pub_fixture_map.csv",
+    "count": 15
+  },
+  "artefacts": [
+    "05_DDD_CONTEXT_MAP.md",
+    "06_DATA_GOVERNANCE_INTEGRITY.md",
+    "07_ONTOLOGY_SEMANTIC_LAYER.md",
+    "08_KNOWLEDGE_GRAPH_DECISION.md",
+    "CONFLICT_RESOLUTION_POLICY.md",
+    "PHASE2_CHECKPOINT.md"
+  ],
+  "knowledge_graph_decision": "do_not_implement_for_poc",
+  "semantic_layer": "lightweight_glossary_not_owl",
+  "dataset_profile_count": 139,
+  "knowledge_doc_count": 32,
+  "decisions": ["D-004", "D-016", "D-017"],
+  "phase2_exit": "complete",
+  "next_phase": "3_architecture_contracts_tests_first"
+}

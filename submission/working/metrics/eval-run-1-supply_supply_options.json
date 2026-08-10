@@ -1,0 +1,12 @@
+{
+  "name": "supply_options",
+  "request_id": "eval-run-1-supply",
+  "workflow": "supply_options",
+  "started_ms": 1786034202504.2234,
+  "ended_ms": 1786034202510.2236,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

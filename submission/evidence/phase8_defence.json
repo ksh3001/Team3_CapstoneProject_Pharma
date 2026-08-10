@@ -1,0 +1,37 @@
+{
+  "phase": "8",
+  "revision": "v1.0_2026-08-07",
+  "team": "Team3",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/08_defence/",
+  "framing_mode": "hypothesis",
+  "workshop_alignment": "stage_8_artefact_30_live_failure_demos",
+  "artefacts": [
+    "30_ELEVATOR_PITCH.md",
+    "FINAL_RECOMMENDATION.md",
+    "FAILURE_DEMOS.md",
+    "failure_demo_results.csv",
+    "PHASE8_CHECKPOINT.md",
+    "README.md"
+  ],
+  "live_demos": {
+    "script": "submission/scripts/run_defence_failure_demos.py",
+    "results": "submission/artefacts/phases/08_defence/failure_demo_results.csv",
+    "count": 8,
+    "all_pass": true
+  },
+  "final_recommendation": {
+    "demo_go": "conditional_go",
+    "production_go": "no_go",
+    "llm_assessed": "keep_off",
+    "write_plane": "deny"
+  },
+  "tests": {
+    "command": "PYTHONPATH=submission python -m pytest submission/tests -q",
+    "phase8_module": "submission/tests/test_phase8_defence.py",
+    "result": "54_passed"
+  },
+  "decisions": ["D-028", "D-029"],
+  "phase8_exit": "complete",
+  "capstone_phases_0_to_8": "complete"
+}

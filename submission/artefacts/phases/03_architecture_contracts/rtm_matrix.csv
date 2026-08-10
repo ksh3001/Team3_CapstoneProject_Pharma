@@ -1,0 +1,17 @@
+req_id,fr,ac_ids,design_ref,test_module,control
+BRQ-02,FR-001|FR-003|FR-004|FR-005,AC-001;AC-023;AC-030;AC-041,ADR-003;ADR-004;DoD,test_phase3_prohibited.py;test_ac_*.py,fail_closed
+AC-001,FR-001,AC-001,ADR-004;authz/service.py,test_ac_authz.py,iam_over_cache
+AC-010,FR-002,AC-010,docs/applicability.py,test_ac_documents.py;test_phase3_prohibited.py,doc_quarantine
+AC-020,FR-003,AC-020,workflows/batch.py;ADR-008,test_ac_batch.py;test_phase3_prohibited.py,unit_conflict_dual_cite
+AC-023,FR-003,AC-023,contracts/batch_response,test_phase3_prohibited.py,reject_disposition
+AC-030,FR-004,AC-030,contracts/pv_response,test_ac_pv.py;test_phase3_prohibited.py,no_final_pv
+AC-031,FR-004,AC-031,ADR-007,test_ac_pv.py;test_phase3_prohibited.py,no_auto_merge
+AC-040,FR-005,AC-040,workflows/supply.py,test_ac_supply.py,quarantine_excluded
+AC-041,FR-005,AC-041,ADR-003;SideEffectGuard,test_ac_supply.py,no_side_effects
+AC-043,FR-005,AC-043,supply guard,test_phase3_prohibited.py,reservation_blocked
+AC-050,FR-006,AC-050,ADR-001,test_ac_continuity.py,deterministic_path
+AC-051,FR-006,AC-051,ADR-002,test_ac_continuity.py,narrator_refused
+AC-052,FR-006,AC-052,continuity stub,deferred_phase7,drill_pending
+AC-060,FR-007,AC-060,evaluate/runner.py,test_ac_evaluate.py,hard_gates
+NFRQ-01,FR-006,NFR-01,ports/llm.py,test_ac_continuity.py,llm_off
+POISON-TOOL,—,—,integration contracts,test_phase3_prohibited.py,manifest_not_loaded

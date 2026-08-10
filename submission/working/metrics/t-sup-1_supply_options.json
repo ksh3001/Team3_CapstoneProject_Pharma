@@ -1,0 +1,12 @@
+{
+  "name": "supply_options",
+  "request_id": "t-sup-1",
+  "workflow": "supply_options",
+  "started_ms": 1786083020430.555,
+  "ended_ms": 1786083020439.9807,
+  "side_effect_count": 0,
+  "conflict_count": 0,
+  "authz_decision": "allow",
+  "readiness_state": "",
+  "extra": {}
+}

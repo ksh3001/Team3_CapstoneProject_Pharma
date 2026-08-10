@@ -1,0 +1,46 @@
+{
+  "phase": "5",
+  "revision": "v1.0_2026-08-07",
+  "team": "Team3",
+  "as_of": "2026-08-07",
+  "location": "submission/artefacts/phases/05_assurance_evaluation_ops/",
+  "framing_mode": "hypothesis",
+  "artefacts": [
+    "21_ASSURANCE_CASE.md",
+    "22_EVALUATION_SCORECARD.md",
+    "23_TOKEN_FINOPS.md",
+    "24_RELIABILITY_OBSERVABILITY.md",
+    "tevv_suite_status.csv",
+    "scorecard_summary.csv",
+    "PHASE5_CHECKPOINT.md",
+    "README.md"
+  ],
+  "assurance_top_claims": {
+    "C0_demo": "supported_conditional",
+    "C0_prime_production": "not_supported_no_go"
+  },
+  "tevv": {
+    "suites": 12,
+    "path": "submission/artefacts/phases/05_assurance_evaluation_ops/tevv_suite_status.csv",
+    "pass_poc_suites": ["TEVV-03"],
+    "note": "honesty_map_not_full_execution"
+  },
+  "finops": {
+    "assessed_inference_usd": 0,
+    "full_tco": "unknown_incomplete_cost_model",
+    "cost_model_human_review_usd": 0,
+    "claim_roi": false
+  },
+  "gates": {
+    "demo_go": "conditional_go",
+    "production_go": "no_go"
+  },
+  "tests": {
+    "command": "PYTHONPATH=submission python -m pytest submission/tests -q",
+    "result": "37_passed",
+    "phase5_module": "submission/tests/test_phase5_tevv_scorecard.py"
+  },
+  "decisions": ["D-022", "D-023"],
+  "phase5_exit": "complete",
+  "next_phase": "6_tevv_deepening_or_ops_templates_25_26"
+}

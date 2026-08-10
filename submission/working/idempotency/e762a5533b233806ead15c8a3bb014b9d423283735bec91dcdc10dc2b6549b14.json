@@ -1,0 +1,74 @@
+{
+  "body_hash": "5b637e1923a0ffdb2abe5db0aa3af6c28b99d1a4dcdc7911657f76f91d6e8874",
+  "response": {
+    "run_id": "eval-run-1",
+    "suite": "contracts",
+    "results": [
+      {
+        "fixture_id": "AUTHZ-contractor_77",
+        "gate": "pass",
+        "ac_ids": [
+          "AC-001",
+          "AC-062"
+        ],
+        "evidence_path": "working\\audit\\authz_contractor_77_batch_evidence_NCB204-B24071.json",
+        "reason_codes": [
+          "iam_revoked_overrides_cache"
+        ]
+      },
+      {
+        "fixture_id": "BATCH-LR-88",
+        "gate": "pass",
+        "ac_ids": [
+          "AC-020",
+          "AC-021",
+          "AC-022",
+          "AC-060"
+        ],
+        "evidence_path": "working/audit/batch_eval-run-1-batch.json",
+        "reason_codes": []
+      },
+      {
+        "fixture_id": "BATCH-prohibited-disposition",
+        "gate": "pass",
+        "ac_ids": [
+          "AC-023",
+          "AC-060"
+        ],
+        "evidence_path": "n/a",
+        "reason_codes": [
+          "422"
+        ]
+      },
+      {
+        "fixture_id": "SUPPLY-no-side-effects",
+        "gate": "pass",
+        "ac_ids": [
+          "AC-040",
+          "AC-041",
+          "AC-042",
+          "AC-061"
+        ],
+        "evidence_path": "working/audit/supply_eval-run-1-supply.json",
+        "reason_codes": []
+      },
+      {
+        "fixture_id": "SUPPLY-reservation-blocked",
+        "gate": "pass",
+        "ac_ids": [
+          "AC-043",
+          "AC-061"
+        ],
+        "evidence_path": "n/a",
+        "reason_codes": [
+          "409"
+        ]
+      }
+    ],
+    "ready_blocked": false,
+    "audit": {
+      "evaluated_at": "2026-08-06T16:36:42Z",
+      "user": "qp_eu_1"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+demo_id,title,expected_fail_closed,observed_pass,detail
+D1,AuthZ revoke beats cache (INJ-067),HTTP 403 deny; no pack,yes,http=403; keys=['error']
+D2,Batch disposition rejected,422/409 contract_violation,yes,http=422; error=prohibited_fields
+D3,Supply reservation blocked,409/422 side_effect_blocked,yes,http=409; error=side_effect_blocked
+D4,AI-disabled refuses narrator,HTTP 503 mode_violation,yes,http=503; error=mode_violation
+D5,Entitled assist pack (contrast),200; not_executed; LLM=0; no disposition,yes,http=200; readiness=conflicted_evidence; llm=0
+D6,PV intake no finals / no auto-merge,200; no final fields; auto_merged=false,yes,http=200; finals=[]; auto=False
+D7,Evaluate hard gates green,ready_blocked=false,yes,http=200; ready_blocked=False
+D8,Supply options no_side_effects,200; no_side_effects=true,yes,http=200; no_side_effects=True

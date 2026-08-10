@@ -1,0 +1,143 @@
+{
+  "request_id": "def-d7-supply",
+  "workflow": "supply_options",
+  "as_of": "2026-08-07T00:00:00Z",
+  "authorization": {
+    "user": "qp_eu_1",
+    "purpose": "supply_options",
+    "checked_at": "2026-08-07T06:09:16Z",
+    "decision": "allow",
+    "reason": "iam_active_entitled"
+  },
+  "evidence": [
+    {
+      "source": "inventory.csv",
+      "record_id": "NCB-204:EU",
+      "authority": "WMS",
+      "effective_at": null,
+      "retrieved_at": "2026-08-07T06:09:16Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "EU",
+        "quality_status": "released",
+        "units": "4300"
+      },
+      "integrity": {
+        "sha256": "09f49947d1066906f08e416c2b280ef5b71cd65f01d2df73a888f07fe2bd6cec",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "inventory.csv",
+      "record_id": "NCB-204:US",
+      "authority": "WMS",
+      "effective_at": null,
+      "retrieved_at": "2026-08-07T06:09:16Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "US",
+        "quality_status": "released",
+        "units": "2700"
+      },
+      "integrity": {
+        "sha256": "d279ec17909072d8bb70c820553f80c171681a652c041f47b7fbe143fe34297d",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "inventory.csv",
+      "record_id": "NCB-204:Global",
+      "authority": "WMS",
+      "effective_at": null,
+      "retrieved_at": "2026-08-07T06:09:16Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "Global",
+        "quality_status": "quarantine",
+        "units": "5100"
+      },
+      "integrity": {
+        "sha256": "e4c91fe494e6bac82be42e01d7a7f8b0766d3b3b5ad90f968c6b524a6c1c7703",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "inventory.csv",
+      "record_id": "NCS-310:AE",
+      "authority": "WMS",
+      "effective_at": null,
+      "retrieved_at": "2026-08-07T06:09:16Z",
+      "facts": {
+        "product": "NCS-310",
+        "market": "AE",
+        "quality_status": "released",
+        "units": "420"
+      },
+      "integrity": {
+        "sha256": "568b3826b37a0b683984e06bf70f63d00b2d1e56c865f42d4ce182070b986b0c",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [],
+  "gaps": [],
+  "abstentions": [],
+  "human_review": {
+    "required": true,
+    "reasons": [
+      "supply_governance_approval"
+    ]
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "mode": "deterministic_offline",
+    "llm_enabled": false,
+    "side_effect_count": 0
+  },
+  "event_id": "SE-001",
+  "options": [
+    {
+      "option_id": "OPT-1",
+      "status": "draft",
+      "product": "NCB-204",
+      "market": "EU",
+      "available_units": "4300",
+      "quality_status": "released"
+    },
+    {
+      "option_id": "OPT-2",
+      "status": "draft",
+      "product": "NCB-204",
+      "market": "US",
+      "available_units": "2700",
+      "quality_status": "released"
+    },
+    {
+      "option_id": "OPT-3",
+      "status": "draft",
+      "product": "NCS-310",
+      "market": "AE",
+      "available_units": "420",
+      "quality_status": "released"
+    }
+  ],
+  "constraints": [
+    {
+      "constraint": "released_only_available"
+    },
+    {
+      "constraint": "no_side_effects"
+    }
+  ],
+  "approvals_required": [
+    "Supply Governance Board"
+  ],
+  "quality_holds": [
+    {
+      "product": "NCB-204",
+      "market": "Global",
+      "units": "5100"
+    }
+  ],
+  "no_side_effects": true
+}

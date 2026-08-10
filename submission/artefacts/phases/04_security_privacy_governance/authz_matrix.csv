@@ -1,0 +1,12 @@
+user,role,iam_state,cache_state,purpose,object_type,expected_decision,control,ac_id,evidence
+contractor_77,supplier_quality_viewer,revoked,active_cached,batch_evidence,batch,deny,IAM_over_cache,AC-001,users_entitlements.csv;access_cache.csv;INJ-067
+contractor_77,supplier_quality_viewer,revoked,active_cached,pv_intake,case,deny,IAM_over_cache,AC-001,users_entitlements.csv;access_cache.csv;INJ-067
+contractor_77,supplier_quality_viewer,revoked,active_cached,supply_options,event,deny,IAM_over_cache,AC-001,users_entitlements.csv;access_cache.csv;INJ-067
+contractor_77,supplier_quality_viewer,revoked,active_cached,evaluate,suite,deny,IAM_over_cache,AC-001,users_entitlements.csv;access_cache.csv;INJ-067
+qp_eu_1,qualified_person,active,active,batch_evidence,batch,allow,IAM_active_entitled,AC-002,users_entitlements.csv
+qp_eu_1,qualified_person,active,active,pv_intake,case,allow,IAM_active_entitled,AC-002,users_entitlements.csv
+qp_eu_1,qualified_person,active,active,supply_options,event,allow,IAM_active_entitled,AC-002,users_entitlements.csv
+qp_eu_1,qualified_person,active,active,evaluate,suite,allow,IAM_active_entitled,AC-002,users_entitlements.csv
+unknown_user,—,—,—,batch_evidence,batch,deny,unknown_user_fail_closed,AC-001,authz/service.py
+qp_eu_1,qualified_person,active,active,disposition_write,batch,deny,invalid_purpose,NFR-03,ALLOWED_PURPOSES
+qp_eu_1,qualified_person,active,active,,batch,deny,missing_purpose,BR-002,FR-001

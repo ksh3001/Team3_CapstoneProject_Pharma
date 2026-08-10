@@ -1,0 +1,9 @@
+{
+  "decision": "allow",
+  "user": "qp_eu_1",
+  "purpose": "supply_options",
+  "object_type": "shortage_event",
+  "object_id": "SE-001",
+  "checked_at": "2026-08-07T06:13:58Z",
+  "reason": "iam_active_entitled"
+}
